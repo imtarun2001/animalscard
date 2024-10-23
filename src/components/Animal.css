@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Oriya:wght@400..700&display=swap');
+
+
+
+.animal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 500px;
+    width: 25%;
+    margin: 10px;
+    padding: 10px;
+    border: 2px solid #9ecaed;
+    border-radius: 20px;
+}
+
+.animal:hover {
+    outline: none;
+    border-color: #57aaed;
+    transition: 0.3s;
+    box-shadow: 0 0 20px #57aaed;
+}
+
+.name {
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.description {
+    border: 1px solid lightblue;
+    padding: 4px;
+    height: 100px;
+    width: 115%;
+    background-color: black;
+    overflow: scroll;
+    font-family: "Noto Serif Oriya", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: justify;
+}
+
+.btn {
+    width: 80%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    background: url('../public/images/bgimg.jpg');
+    background-position: center;
+    background-size: contain;
+}
+
+span {
+    color: aqua;
+    cursor: pointer;
+}
+
+button {
+    border: 3px solid rgb(255, 255, 255);
+    height: 45px;
+    width: 45px;
+    border-radius: 100%;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: black;
+}
+
+button:hover {
+    background-color: rgb(227, 221, 245);
+    border: 3px solid rgb(0, 0, 0);
+}
