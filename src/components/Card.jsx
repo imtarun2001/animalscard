@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import { MdDelete } from "react-icons/md";
 
 function Card({animal,removeHandler}) {
@@ -6,14 +6,14 @@ function Card({animal,removeHandler}) {
     const [readmore,setReadmore] = useState(false);
 
   return (
-    <div className='flex flex-col justify-between items-center gap-5 w-80 bg-cyan-100 py-5 px-2 rounded-[7px] outline-2 outline-fuchsia-500 transform-3d hover:scale-115 hover:bg-black hover:text-white transition duration-700 mb-2.5 cursor-pointer'>
+    <div className='flex flex-col justify-between items-center gap-5 w-80 bg-gray-200 py-5 px-2 rounded-[7px] outline-2 outline-fuchsia-500 transform-3d hover:scale-105 hover:bg-black hover:text-white transition duration-700 mb-2.5 cursor-pointer'>
       <div className='font-extrabold'>
         {
             animal.id+'.'+animal.name
         }
         <sub>[
             {
-                animal.species
+                animal.specie
             }
         ]</sub>
       </div>
